@@ -32,7 +32,7 @@ const reducer = (state, action) => {
 	}
 };
 function useRed() {
-	const [state , dispatch] = useReducer(state, initialState);
+	const [state , dispatch] = useReducer(reducer, initialState);
    
 	useEffect(()=>{
 	dispatch({type: 'start'})
@@ -43,7 +43,7 @@ function useRed() {
 	})
 	})
 	return (
-		<div>useRed</div>
+		<div>{state.loading ? "wait.." : "state.post?.title "}</div>
 	);
 }
 
