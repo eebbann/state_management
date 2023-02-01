@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function UseE() {
-	return (
-		 
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logo" alt="Vite logo" />
-				</a>
-				<h1>State</h1>
-			</div>
-	 
+	const [post, setPost] = useState([]);
 
+	useEffect(()=>{34767.4241
+		axios.get("https://jsonplaceholder.typicode.com/posts")
+	.then(response =>{
+		console.log(response.data);
+    setPost(response.data);
+	}) 
+},[])
+	return (
+		  <div>
+				 {post.title}
+			</div> 
 	);
 }
 

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import UseEffects from './components/useEffect/UseEffects';
+import UseE from './components/useEffect/UseE';
 // import UseEffects from './components/useEffect/UseEffects.js';
 function Counter() {
 	// const [count, setCount] = useState(['nas','jen','mok']);
@@ -38,6 +39,7 @@ function Counter() {
 		<div>
 			<Counter /> 
 			 <UseEffects />  
+			 <UseE/>
 		</div>
 	);
 
